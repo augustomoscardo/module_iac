@@ -8,7 +8,7 @@ const firstBucket = new aws.s3.BucketV2("primeiro-bucket", {
   },
 });
 
-const secondBucket = new aws.s3.BucketV2("primeiro-bucket", {
+const secondBucket = new aws.s3.BucketV2("segundo-bucket", {
   bucket: 'segundo-bucket-pos-full-stack-360',
   tags: {
     IAC: "true",
