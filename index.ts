@@ -1,4 +1,4 @@
-import * as aws from "@pulumi/aws";
+import * as aws from "@pulumi/aws"
 
 // Create an AWS resource (S3 Bucket)
 const bucket = new aws.s3.BucketV2("primeiro-bucket", {
@@ -17,9 +17,9 @@ const ecr = new aws.ecr.Repository("primeiro-ecr", {
 })
 
 // Export the name of the bucket
-export const bucketName = bucket.id;
-export const bucketInfo = bucket.bucket;
-export const bucketArn = bucket.arn;
+export const bucketName = bucket.id
+export const bucketInfo = bucket.bucket
+export const bucketArn = bucket.arn
 
-export const ecrName = ecr.name;
-export const ecrRepositoryUrl = ecr.repositoryUrl;
+export const ecrName = ecr.name
+export const ecrRepositoryUrl = ecr.repositoryUrl
