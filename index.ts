@@ -16,7 +16,7 @@ const secondBucket = new aws.s3.BucketV2("segundo-bucket", {
 });
 
 const ecr = new aws.ecr.Repository("primeiro-ecr", {
-  name: 'primeiro-ecr',
+  name: 'primeiro-ecr-tech-developer-360',
   imageTagMutability: 'IMMUTABLE',
   tags: {
     IAC: 'true',
